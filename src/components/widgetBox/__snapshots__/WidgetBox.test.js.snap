@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WidgetBox Component Should match the body 1`] = `
+<div>
+  <div
+    class="widgetBox"
+    data-id="1"
+    data-testid="widgetBox"
+  >
+    <hgroup
+      class="widgetBox__hgroup"
+    >
+      <h3
+        class="widgetBox__heading"
+        data-testid="title"
+      >
+        1
+        -
+        Kamal
+      </h3>
+      <button
+        class="widgetBox__btn"
+        data-testid="edit"
+      >
+        <img
+          alt="edit"
+          src="https://img.icons8.com/material-outlined/20/999999/edit--v1.png"
+          width="15"
+        />
+      </button>
+    </hgroup>
+    <p
+      class="widgetBox__text"
+      data-testid="body"
+    >
+      My name is kamal
+    </p>
+  </div>
+</div>
+`;
+
+exports[`WidgetBox Component Should render on screen 1`] = `
+<div>
+  <div
+    class="widgetBox"
+    data-id="1"
+    data-testid="widgetBox"
+  >
+    <hgroup
+      class="widgetBox__hgroup"
+    >
+      <h3
+        class="widgetBox__heading"
+        data-testid="title"
+      >
+        1
+        -
+        Kamal
+      </h3>
+      <button
+        class="widgetBox__btn"
+        data-testid="edit"
+      >
+        <img
+          alt="edit"
+          src="https://img.icons8.com/material-outlined/20/999999/edit--v1.png"
+          width="15"
+        />
+      </button>
+    </hgroup>
+    <p
+      class="widgetBox__text"
+      data-testid="body"
+    >
+      My name is kamal
+    </p>
+  </div>
+</div>
+`;

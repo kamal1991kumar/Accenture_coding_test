@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextArea Component Should render error message 1`] = `
+<div>
+  <div
+    class="textArea"
+  >
+    <textarea
+      class="textArea__input textArea__input-error"
+      data-testid="textArea"
+    >
+      text
+    </textarea>
+    <div
+      class="textArea__error"
+      data-testid="error"
+    >
+      textArea not be empty
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TextArea Component Should render on screen 1`] = `
+<div>
+  <div
+    class="textArea"
+  >
+    <textarea
+      class="textArea__input textArea__input-"
+      data-testid="textArea"
+    >
+      text
+    </textarea>
+  </div>
+</div>
+`;

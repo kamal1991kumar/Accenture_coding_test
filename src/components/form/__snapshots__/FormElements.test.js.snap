@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormElemets Component Should render inputField component 1`] = `
+<input
+  class="inputFiled__input inputFiled__input-"
+  data-testid="input"
+  type="text"
+  value="text"
+/>
+`;
+
+exports[`FormElemets Component Should render textArea component 1`] = `
+<textarea
+  class="textArea__input textArea__input-"
+  data-testid="textArea"
+>
+  text
+</textarea>
+`;

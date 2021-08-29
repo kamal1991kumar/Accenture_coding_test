@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal Component Should render on screen 1`] = `
+<div>
+  <div
+    class="modal"
+  >
+    <div
+      class="modal__content"
+    >
+      <h4
+        class="modal__heading"
+        data-testid="heading"
+      >
+        Dialog box
+      </h4>
+      <div
+        class="modal__body"
+        data-testid="children"
+      />
+      <div
+        class="modal__footer"
+      >
+        <button
+          class="modal__btn modal__btn-cancel"
+          data-testid="close"
+        >
+          Cancel
+        </button>
+        <button
+          class="modal__btn modal__btn-save"
+          data-testid="save"
+        >
+          Save
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

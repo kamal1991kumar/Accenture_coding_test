@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputFiled Component Should render error message 1`] = `
+<div>
+  <div
+    class="inputFiled"
+  >
+    <input
+      class="inputFiled__input inputFiled__input-error"
+      data-testid="input"
+      type="text"
+      value="text"
+    />
+    <div
+      class="inputFiled__error"
+      data-testid="error"
+    >
+      input not be empty
+    </div>
+  </div>
+</div>
+`;
+
+exports[`InputFiled Component Should render on screen 1`] = `
+<div>
+  <div
+    class="inputFiled"
+  >
+    <input
+      class="inputFiled__input inputFiled__input-"
+      data-testid="input"
+      type="text"
+      value="text"
+    />
+  </div>
+</div>
+`;

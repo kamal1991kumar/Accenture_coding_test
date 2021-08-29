@@ -1,0 +1,8 @@
+.WidgetModal {
+  &__row {
+    padding-top: 10px;
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+}

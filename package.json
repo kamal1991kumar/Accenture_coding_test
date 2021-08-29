@@ -1,0 +1,49 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "React scroll to load more project",
+  "keywords": [
+    "react",
+    "starter"
+  ],
+  "main": "src/index.js",
+  "dependencies": {
+    "@testing-library/jest-dom": "5.14.1",
+    "@testing-library/react": "12.0.0",
+    "@testing-library/user-event": "13.2.1",
+    "axios": "0.21.1",
+    "axios-mock-adapter": "^1.20.0",
+    "lodash": "4.17.21",
+    "node-sass": "6.0.1",
+    "prop-types": "^15.7.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-redux": "7.2.4",
+    "react-scripts": "4.0.3",
+    "redux": "4.1.1",
+    "redux-mock-store": "^1.5.4",
+    "redux-thunk": "2.3.0"
+  },
+  "devDependencies": {
+    "@babel/runtime": "7.13.8",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "prettier": "^2.3.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "prettier": "prettier --write \"{,!(node_modules)/**/}*.js\"",
+    "lint": "eslint ./",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

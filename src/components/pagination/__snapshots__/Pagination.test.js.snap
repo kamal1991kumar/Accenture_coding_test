@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagniation Component Should render on screen 1`] = `
+<div>
+  <div
+    class="pagination"
+    data-testid="pagination"
+  >
+    10
+     out of 
+    10
+  </div>
+</div>
+`;

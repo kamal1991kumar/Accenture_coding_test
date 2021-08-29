@@ -1,0 +1,52 @@
+.modal {
+  position: absolute;
+  background: rgba(0,0,0,.3);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+
+  &__content {
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
+  }
+  &__heading, &__body, &__footer{
+    padding: 10px;
+  }
+  &__heading {
+    font-weight: normal;
+    font-size: 12px;
+    border-bottom: solid 1px #ebebeb;
+  }
+  &__footer {
+    padding-top: 0;
+    text-align: right;
+  }
+  &__btn {
+    font-size: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    border:solid 1px #7f7f7f;
+    border-radius: 3px;
+    padding: 5px 8px;
+    &-cancel {
+      background: #fff;
+      color: #7f7f7f;
+    }
+    &-save {
+      background: #7f7f7f;
+      color: #fff;
+    }
+    &:disabled {
+      cursor: not-allowed;
+      opacity: .6;
+    }
+  }
+}
