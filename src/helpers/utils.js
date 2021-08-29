@@ -2,7 +2,7 @@ import { noop, isEmpty, cloneDeep } from "lodash";
 export const filedValidations = (types, data) => {
   const result = {
     hasError: false,
-    message: "",
+    message: ""
   };
   for (let i = 0; i < types.length; i++) {
     if (types[i] === "required") {
@@ -25,7 +25,7 @@ export const filedValidations = (types, data) => {
 export const validationMessages = (fieldName, type = "") => {
   const message = {
     required: `${fieldName} should not be empty.`,
-    isuniq: `${fieldName} should be uniq.`,
+    isuniq: `${fieldName} should be uniq.`
   };
 
   return isEmpty(type) ? "" : message[type];
@@ -40,16 +40,16 @@ export const modalFormSchema = {
       type: "input",
       value: "",
       handleChange: noop,
-      validations: ["required", "isuniq"],
+      validations: ["required", "isuniq"]
     },
     body: {
       hasError: false,
       type: "textarea",
       value: "",
       handleChange: noop,
-      validations: ["required"],
-    },
-  },
+      validations: ["required"]
+    }
+  }
 };
 
 export const formInfo = ({
@@ -58,22 +58,19 @@ export const formInfo = ({
   handleChange,
   isValidTitle,
   onTitleChange,
-  isLoadingModal,
+  isLoadingModal
 }) => {
   const formData = cloneDeep(modalFormSchema);
   formData.fieldsData.title.value = title;
-  formData.fieldsData.title.value = body;
-
-  if (!isLoadingModal) {
-    formData.fieldsData.title.handleChange = (t) =>
-      onTitleChange({
-        title: t,
-      });
-    formData.fieldsData.body.handleChange = (b) =>
-      handleChange({
-        body: b,
-      });
-  }
+  formData.fieldsData.body.value = body;
+  formData.fieldsData.title.handleChange = (t) =>
+    onTitleChange({
+      title: t
+    });
+  formData.fieldsData.body.handleChange = (b) =>
+    handleChange({
+      body: b
+    });
 
   if (isLoadingModal) {
     return formData;
@@ -83,13 +80,13 @@ export const formInfo = ({
       formData.fieldsData[filed].validations,
       {
         value: formData.fieldsData[filed].value,
-        isValidTitle,
+        isValidTitle
       }
     );
     formData.fieldsData[filed] = {
       ...formData.fieldsData[filed],
       hasError,
-      message: validationMessages(filed, message),
+      message: validationMessages(filed, message)
     };
   });
 
